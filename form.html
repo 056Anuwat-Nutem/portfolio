@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การใช้ Form</title>
+</head>
+<body>
+    <h2>สมัครสมาชิก</h2>
+
+    <form action="" style="border: 1px dashed; width: 40%;">
+        <fieldset>
+        <legend>ข้อมูลทั่วไป</legend>
+        <div style="margin: 5px;">
+            <label for="name">ชื่อ*:</label>
+            <input type="text" name="fname" required>
+        </div>
+        <div>
+            <label for="lname">นามสกุล:</label>
+            <input type="text" name="lname">
+        </div>
+        <div style="margin: 5px;">
+            <label for="email">อีเมล</label>
+             <input type="email" name="email">
+        </div>
+        <div style="margin: 5px;">
+            <label for="password">รหัสผ่าน</label>
+             <input type="password" name="password">
+        </div>
+        <div style="margin: 5px;">
+            <label for="confiem_password">ยืนยันรหัสผ่าน</label>
+             <input type="password" name="confiem_password">
+        </div>
+        </fieldset>
+        <fieldset>
+        <div style="margin: 5px;">
+            <label for="phone">เบอร์โทร</label>
+            <input type="tel" name="phone">
+        </div>
+        <div style="margin: 5px;">
+            <label for="address">ที่อยู่</label>
+            <textarea name="address" rows="4" cols="30"></textarea>
+        </div>
+        <div style="margin: 5px;">
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender" value="ชาย"> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+            <input type="radio" name="gender" value="LGBTQ+"> LGBTQ+
+            <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+        </div>
+        <div style="margin: 5px;">
+            <label for="interests">ความสนใจ</label>
+            <input type="checkbox" name="interests=" value="กีฬา"> กีฬา
+            <input type="checkbox" name="interests=" value="ดนตรี"> ดนตรี
+            <input type="checkbox" name="interests=" value="การอ่าน"> การอ่าน
+        </div>
+        <div style="margin: 5px;">
+            <label for="biethday">วันเกิด</label>
+            <input type="date" name="biethday">
+        </div>
+        <div style="margin: 5px;">
+            <label for="color">สีโปรด</label>
+            <input type="color" name="color">
+        </div>
+        <div style="margin: 5px;">
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="10" max="120" step="1">
+        </div>
+        <div style="margin: 5px;">
+            <label for="province">จังหวัด</label>
+                <select name="province">
+                    <option value="กรุงเทพมหานคร"></option>
+                    <option value="เชียงใหม่"></option>
+                    <option value="ภูเก็ต"></option>
+                    <option value="สงขลา"></option>
+                </select>
+        </div>
+        <div style="margin: 5px;">
+            <label for="profile">โปรไฟล์</label>
+            <input type="file" name="profile">
+        </div>
+        </fieldset>
+        <div style="margin: 5px;">
+           <input type="submit" value="สมัครสมาชิก">
+            <input type="reset" value="ล้างข้อมูล">
+        </div>
+    </form>
+</body>
+</html>
